@@ -1,0 +1,46 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Start Backend",
+      "type": "shell",
+      "command": "powershell",
+      "args": [
+        "-NoLogo",
+        "-NoProfile",
+        "-Command",
+        "$env:PATH = 'C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\MSBuild\\Microsoft\\VisualStudio\\NodeJs;' + $env:PATH; cd 'c:\\Users\\DINEO\\Downloads\\easy plug\\backend'; npm.cmd start"
+      ],
+      "problemMatcher": [],
+      "presentation": {
+        "panel": "dedicated",
+        "showReuseMessage": false,
+        "clear": false
+      }
+    },
+    {
+      "label": "Start Frontend",
+      "type": "shell",
+      "command": "powershell",
+      "args": [
+        "-NoLogo",
+        "-NoProfile",
+        "-Command",
+        "$env:PATH = 'C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\MSBuild\\Microsoft\\VisualStudio\\NodeJs;' + $env:PATH; cd 'c:\\Users\\DINEO\\Downloads\\easy plug\\frontend'; npm.cmd start"
+      ],
+      "problemMatcher": [],
+      "presentation": {
+        "panel": "dedicated",
+        "showReuseMessage": false,
+        "clear": false
+      }
+    }
+  ],
+  "compounds": [
+    {
+      "label": "Start EasyPlug Fullstack",
+      "dependsOn": ["Start Backend", "Start Frontend"],
+      "dependsOrder": "parallel"
+    }
+  ]
+}

@@ -1,0 +1,34 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  background: #eff6ff;
+  color: #102a43;
+}
+
+button,
+input,
+textarea {
+  font: inherit;
+}
+
+button {
+  cursor: pointer;
+}
+
+input,
+textarea {
+  width: 100%;
+  border: 1px solid #d9e2ec;
+  border-radius: 8px;
+  padding: 0.9rem 1rem;
+  background: #ffffff;
+}
+
+textarea {
+  min-height: 100px;
+  resize: vertical;
+}
