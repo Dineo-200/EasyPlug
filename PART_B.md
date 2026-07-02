@@ -289,6 +289,27 @@ sequenceDiagram
 - This markdown file contains the Part B answers and diagrams.
 - If you prefer diagrams as image files, I can export SVG/PNG versions from the Mermaid code and add them to the repository.
 
+## Screenshots for diagrams
+For the assessment, include screenshots of the diagramming tool you used for each diagram below.
+Copy the screenshot images into your submission document under the relevant question.
+
+Suggested screenshot items:
+1. Use case diagram tool screenshot
+2. ERD diagram tool screenshot
+3. System architecture diagram tool screenshot
+4. Flowchart diagram tool screenshot
+5. Sequence diagram tool screenshot
+
+Example insertion:
+
+### 5.1 Use case diagram (user interactions)
+![Use case diagram screenshot](./screenshots/use-case-diagram.png)
+
+### 5.2 Entity Relationship Diagram (ERD)
+![ERD screenshot](./screenshots/erd.png)
+
+Use the same pattern for the other diagrams.
+
 
 ---
 
